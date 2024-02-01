@@ -1,16 +1,16 @@
 import React from "react";
 import Top from "../Components/Feed/Top";
 import Bottom from "../Components/Feed/Bottom";
-import './Feed.scss'
+import "./Feed.scss";
 
 const Feed = () => {
   return (
-    <div className="feed" style={{width:"100%"}}>
+    <div className="feed" style={{ width: "80%" }}>
       <div className="top">
-        <Top/>
+        <Top />
       </div>
       <div className="bottom">
-        <Bottom/>
+        <Bottom />
       </div>
     </div>
   );

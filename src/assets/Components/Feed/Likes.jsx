@@ -22,8 +22,8 @@ const Likes = () => {
       className="likes"
       style={{
         display: "flex",
-        justifyContent: "space-evenly",
-        paddingBlock: "10px",
+        justifyContent: "space-between",
+        padding: "1rem",
       }}
     >
       {likes.map((item, index) => (

@@ -1,0 +1,106 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8FAFC;
+  width: 75%;
+  padding: 1rem;
+  overflow: auto;
+  .your {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0.4rem;
+    margin-block: 0.5rem;
+    h3{
+        padding: .5rem;
+    }
+    
+    .others {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-block: .5rem;
+      border-top: 1px solid #F1F5F9;
+      .othersNames {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  .public {
+    .publicItems {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: white;
+      padding: 0.5rem;
+      margin-block: 0.5rem;
+      .LeftRight {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding-block: 1rem;
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+        .right {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+      .onMind {
+        display: flex;
+        align-items: center;
+        background-color: #f8fafc;
+        justify-content: space-between;
+        padding: 0.5rem;
+        border-radius: 0.6rem;
+        margin-bottom: 1rem;
+
+        input {
+          border: none;
+          background-color: transparent;
+        }
+      }
+      .live {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1rem;
+        align-items: center;
+        border-top: 1px solid #f1f5f9;
+      }
+    }
+  }
+  .photography {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0.5rem;
+    .angie {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      .angieName {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .imgs {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1rem;
+      padding-block: 1rem;
+    }
+    .like{
+        padding-inline: 1rem;
+    }
+  }
+}
