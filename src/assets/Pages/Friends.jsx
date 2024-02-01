@@ -39,7 +39,10 @@ const Friends = () => {
         name: " Brooklyn Simmons",
         social: "@anglee",
         icon: four,
-      },
+      }
+    ];
+      
+    const friendss = [
       {
         name: " Leslie Alexander",
         social: "@anglee",
@@ -68,22 +71,41 @@ const Friends = () => {
     ];
 
   return (
-    <div className="friends">
-      {friend.map((item, index) => (
-        <div className="friendItems" key="index">
-          <div className="avatar">
-            <div className="avatarDetails">
-              <img src={item.icon} alt="" />
-              <div className="avatarName">
-                <p>{item.name}</p>
-                <p>{item.social}</p>
+    <div className='Friend'>
+      <div className="friends">
+        {friend.map((item, index) => (
+          <div className="friendItems" key="index">
+            <div className="avatar">
+              <div className="avatarDetails">
+                <img src={item.icon} alt="" />
+                <div className="avatarName">
+                  <p>{item.name}</p>
+                  <p>{item.social}</p>
+                </div>
               </div>
+              <img src={ellipsis} alt="" width="20" />
             </div>
-            <img src={ellipsis} alt="" width="20" />
+            <button>Message</button>
           </div>
-          <button>Message</button>
-        </div>
-      ))}
+        ))}
+      </div>
+      <div className="friendss">
+        {friendss.map((item, index) => (
+          <div className="friendssItems" key="index">
+            <div className="avatar">
+              <div className="avatarDetails">
+                <img src={item.icon} alt="" />
+                <div className="avatarName">
+                  <p>{item.name}</p>
+                  <p>{item.social}</p>
+                </div>
+              </div>
+              <img src={ellipsis} alt="" width="20" />
+            </div>
+            <button>Message</button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
