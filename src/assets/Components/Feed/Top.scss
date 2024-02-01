@@ -1,0 +1,52 @@
+.top {
+  width: 100%;
+  padding-top: 0px;
+  border-radius: 5px;
+  background-color: white;
+  .img {
+    width: 100%;
+    button {
+      float: right;
+      transform: translateY(-900%);
+      margin-right: 10px;
+      padding-inline: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  }
+  .avatar {
+    display: flex;
+    padding-left: 10px;
+    gap: 4rem;
+    background-color: white;
+
+    .angela {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .lee {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin-left: 30px;
+        transform: translateY(-90%);
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        margin-left: 20px;
+      }
+    }
+    .posts {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+    //   padding-inline: 70px;
+      padding: .8rem;
+      background-color: #f8fafc;
+      border-radius: 5px;
+      background-color: white;
+    }
+  }
+}

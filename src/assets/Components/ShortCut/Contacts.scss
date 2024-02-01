@@ -1,0 +1,16 @@
+.ContactItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .heading{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contactcontainer{
+        .contact-item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}

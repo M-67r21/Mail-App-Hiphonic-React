@@ -1,0 +1,20 @@
+.Profile {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  background-color: #f8fafc;
+  .text {
+    padding: 1px;
+    .Profilename {
+      color: #0f172a;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .username {
+      color: #64748b;
+      font-size: 12px;
+    }
+  }
+}

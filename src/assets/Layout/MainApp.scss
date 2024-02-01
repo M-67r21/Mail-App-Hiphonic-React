@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  bottom: 0;
+  width: 80%;
+  gap: 10px;
+  height: 90%;
+  position: fixed;
+  .feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    bottom: 0;
+    overflow: auto;
+  }
+  .shortcuts {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 20%;
+    position: fixed;
+    right: 0;
+    height: 90%;
+    bottom: 0;
+    overflow: auto;
+  }
+}

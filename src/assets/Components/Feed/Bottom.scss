@@ -1,0 +1,12 @@
+.Bottom{
+    display: flex;
+    gap: 2rem;
+    padding: 0.8rem;
+    .left{
+        float: left;
+        width: 35%;
+    }
+    .right{
+        width: 60%;
+    }
+}

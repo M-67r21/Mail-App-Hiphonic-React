@@ -1,0 +1,12 @@
+.short{
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    .heading{
+        padding: 0px;
+    }
+    .shortcut-item{
+        display: flex;
+        align-items: center;
+    }
+}

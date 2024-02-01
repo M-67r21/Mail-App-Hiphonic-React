@@ -1,0 +1,18 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10px;
+  color: #64748b;
+  background-color: aquamarine;
+  h3 {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+  }
+  .menu-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+.bottom-left{
+    .range{
+        padding: 0.8rem;
+        // padding-left: 0;
+        background-color: white;
+    }
+    .intro{
+        padding-inline: 0.8rem;
+        // padding-left: 0;
+        background-color: white;
+        .intro-con{
+            .intro1{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .images{
+        padding: 0.8rem;
+        // padding-left: 0;
+        background-color: white;
+        .photos{
+            display: flex;
+            justify-content: space-between;
+        }
+        .one{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding-top: 1rem;
+        }
+    }
+}

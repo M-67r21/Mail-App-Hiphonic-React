@@ -1,0 +1,10 @@
+.side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  width: 20%;
+  position: fixed;
+  height: 90%;
+  bottom: 0;
+}

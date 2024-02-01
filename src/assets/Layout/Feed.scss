@@ -1,0 +1,11 @@
+.feed{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8FAFC;
+    padding: 1rem;
+
+    .bottom{
+        display: flex;
+        padding-top: 10px;
+    }
+}

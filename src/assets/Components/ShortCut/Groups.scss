@@ -1,0 +1,15 @@
+.GroupItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        padding-block: 10px;
+    }
+    .group-item{
+        display: flex;
+            align-items: center;
+            gap: 10px;
+    }
+}
