@@ -11,6 +11,8 @@ import eight from "../Components/Images/48px-8.png";
 import nine from "../Components/Images/48px-9.png";
 import ellipsis from "../Components/Images/ellipsis-solid.svg";
 
+import "./Friends.scss";
+
 const Friends = () => {
     const friend = [
       {
@@ -72,8 +74,10 @@ const Friends = () => {
           <div className="avatar">
             <div className="avatarDetails">
               <img src={item.icon} alt="" />
-              <p>{item.name}</p>
-              <p>{item.social}</p>
+              <div className="avatarName">
+                <p>{item.name}</p>
+                <p>{item.social}</p>
+              </div>
             </div>
             <img src={ellipsis} alt="" width="20" />
           </div>

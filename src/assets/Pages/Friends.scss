@@ -1,0 +1,23 @@
+.friends {
+  background-color: rgb(186, 221, 209);
+  width: 75%;
+  gap: 1rem;
+  overflow: auto;
+  padding: 1rem;
+  .friendItems {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafc;
+    border-radius: .5rem;
+
+    width: 50%;
+    .avatar {
+      display: flex;
+      justify-content: space-between;
+      .avatarDetails {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
