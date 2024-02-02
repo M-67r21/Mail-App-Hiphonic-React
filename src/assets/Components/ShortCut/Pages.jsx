@@ -22,13 +22,12 @@ const Pages = () => {
     <div className="pages">
       <div className="heading">
         <p>YOUR PAGES</p>
-        <p>See all</p>
-        {/* {showSeeAll && <p>See All</p>} */}
+        <p style={{ color: "#2563EB", fontSize:"0.9rem" }}>See all</p>
       </div>
       {shortCutItems &&
         shortCutItems.map((item, index) => (
           <div className="shortcut-item" key={index}>
-            <img src={item.icon} alt={item.name} width="20" height="20" />
+            <img src={item.icon} alt={item.name} width="30" height="30" />
             <p>{item.name}</p>
           </div>
         ))}

@@ -1,22 +1,27 @@
+import { Link } from "react-router-dom";
 import timeline from "../Images/timeline.png";
 import friends from "../Images/friends.png";
 import groups from "../Images/group.png";
 import videos from "../Images/video.png";
 import photos from "../Images/photo.png";
 import events from "../Images/events.png";
-import './Menu.scss';
+import "./Menu.scss";
 
 const Menu = () => {
   return (
     <div className="menu">
-      <h3>MENU</h3>
+      <h3 style={{ color: "#94A3B8" }}>MENU</h3>
       <div className="menu-items">
         <img src={timeline} alt="" />
-        <span>Timeline</span>
+        <Link to="/timeline">
+          <span>Timeline</span>
+        </Link>
       </div>
       <div className="menu-items">
         <img src={friends} alt="" />
-        <span>Friends</span>
+        <Link to="/friends">
+          <span>Friends</span>
+        </Link>
       </div>
       <div className="menu-items">
         <img src={groups} alt="" />

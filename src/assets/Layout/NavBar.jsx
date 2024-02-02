@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import logo from "../Components/Images/logo.png";
 import sidebar from "../Components/Images/sidebar.png";
 import Avatar from "../Components/Images/avatar.png";
@@ -24,7 +26,10 @@ const NavBar = () => {
         </div>
         <div className="nav-right-body">
           <img src={Messages} alt="noimage" />
-          <img src={Notifications} alt="noimage" />
+          <Link to="/notification">
+            <img src={Notifications} alt="noimage" />
+          </Link>
+
           <div className="profile">
             <img src={Avatar} alt="noimage" />
             <img src={Chevrondown} alt="noimage" />

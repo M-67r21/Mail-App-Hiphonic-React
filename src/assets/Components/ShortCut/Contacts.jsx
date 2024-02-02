@@ -31,7 +31,7 @@ const Contacts = () => {
     <div className="ContactItems">
       <div className="heading">
         <p style={{ textTransform: "uppercase" }}>Contacts</p>
-        <p style={{ color: "#2563EB" }}>See all</p>
+        <p style={{ color: "#2563EB", fontSize: "0.9rem" }}>See all</p>
       </div>
       {contacts &&
         contacts.map((item, index) => (

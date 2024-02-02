@@ -5,15 +5,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './MainApp.scss'
 import Timeline from '../Pages/Timeline'
 import Friends from '../Pages/Friends'
+import Notification from '../Pages/Notification'
 
 
 const MainApp = () => {
   return (
     <div className="main">
       <Routes>
+        
         <Route path="/" element={<Feed />} />
         <Route path="/timeline" element={<Timeline />} />
-        <Route path="/friends" element={<Friends/>} />
+        <Route path="/friends" element={<Friends />} />
+        <Route path="/notification" element={<Notification />} />
       </Routes>
       <div className="shortcuts">
         <Shortcut />

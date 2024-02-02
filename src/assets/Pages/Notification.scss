@@ -1,0 +1,73 @@
+.Noti {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf3f3;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin: 0.5rem;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: inline;
+  }
+  .topp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .all {
+    display: flex;
+    flex-direction: column;
+    .unread {
+      display: flex;
+      gap: 2rem;
+      padding-block: 0.5rem;
+      .allNoti {
+        padding: 0.5rem;
+        background-color: #eff6ff;
+        color: #2563eb;
+        border-radius: 0.8rem;
+      }
+      .unreadP {
+        padding: 0.5rem;
+        background-color: #f1f5f9;
+        color: #94a3b8;
+        border-radius: 0.8rem;
+      }
+    }
+    .today {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-block: 1rem;
+      .todayItems {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .todayNoti {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          .todayNotiP {
+            align-items: center;
+          }
+        }
+      }
+    }
+    .yesterday {
+      display: flex;
+      flex-direction: column;
+      .yesterItems {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .yesterNoti {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ import "./Feed.scss";
 
 const Feed = () => {
   return (
-    <div className="feed" style={{ width: "80%" }}>
+    <div className="feed" style={{ width: "75%" }}>
       <div className="top">
         <Top />
       </div>

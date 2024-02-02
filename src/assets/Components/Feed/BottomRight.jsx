@@ -8,7 +8,10 @@ import ink from "../Images/ink.png";
 
 const BottomRight = () => {
   return (
-    <div className="bottomRight" style={{ backgroundColor: "white", gap: "" }}>
+    <div
+      className="bottomRight"
+      style={{ backgroundColor: "white", paddingBlock: ".8rem" }}
+    >
       <div
         className="mind"
         style={{
