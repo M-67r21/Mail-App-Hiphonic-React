@@ -27,3 +27,22 @@
     left: 0;
     // background-color: dodgerblue;
 }
+@media screen and (max-width: 600px) {
+  .container{
+    width: 100%;
+  }
+  .Main{
+    width: 100%;
+  }
+  .NavBar{
+    height: 10%;
+  }
+  .Sidebar{
+  display: none;
+}
+.MainApp{
+  // display: flex;
+  // flex-direction: column;
+  width: 100%;
+}
+}

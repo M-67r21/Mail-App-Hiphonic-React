@@ -1,8 +1,13 @@
-.short{
-    display: flex;
-    flex-direction: column;
-    padding-inline: 10px;
-    gap: 20px;
+.short {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(218, 141, 27);
+  padding-inline: 10px;
+  gap: 1rem;
+}
 
-    
+@media screen and (max-width: 600px) {
+  .short {
+    display: none;
+  }
 }

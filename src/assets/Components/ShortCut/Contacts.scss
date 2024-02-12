@@ -1,16 +1,21 @@
-.ContactItems{
+.ContactItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .heading {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    .heading{
-        display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
+  }
+  .contactcontainer {
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-    .contactcontainer{
-        .contact-item{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .ContactItems {
+    display: none;
+  }
 }

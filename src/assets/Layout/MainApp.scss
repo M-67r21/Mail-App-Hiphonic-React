@@ -5,7 +5,7 @@
   gap: 10px;
   height: 90%;
   position: fixed;
-  background-color: #F8FAFC;
+  background-color: #f8fafc;
   .feed {
     display: flex;
     flex-direction: column;
@@ -17,12 +17,23 @@
   .shortcuts {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-    width: 20%;
-    position: fixed;
+    background-color: rgb(180, 187, 115);
+    width: 25%;
+    // position: fixed;
     right: 0;
-    height: 90%;
+    height: 100%;
     bottom: 0;
     overflow: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    width: 100%;
+  }
+  .feed {
+    width: 100%;
+  }
+  .shortcuts {
+    display: none;
   }
 }

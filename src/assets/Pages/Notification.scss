@@ -1,5 +1,6 @@
 .Noti {
   display: flex;
+  // display: none;
   flex-direction: column;
   background-color: #faf3f3;
   width: 30%;
@@ -7,6 +8,10 @@
   border-radius: 0.8rem;
   margin: 0.5rem;
   overflow: auto;
+  z-index: 1000;
+  top: 1.2rem;
+  right: 1.2rem;
+  position: absolute;
   &::-webkit-scrollbar {
     display: inline;
   }

@@ -1,0 +1,20 @@
+.info {
+  .infoitems {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+    padding-block: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .infoitems {
+    display: flex;
+    
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+  }
+}

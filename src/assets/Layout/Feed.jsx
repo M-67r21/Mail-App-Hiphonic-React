@@ -5,11 +5,11 @@ import "./Feed.scss";
 
 const Feed = () => {
   return (
-    <div className="feed" style={{ width: "75%" }}>
-      <div className="top">
+    <div className="prof2-feed" style={{ }}>
+      <div className="prof2-top">
         <Top />
       </div>
-      <div className="bottom">
+      <div className="prof2-bottom">
         <Bottom />
       </div>
     </div>

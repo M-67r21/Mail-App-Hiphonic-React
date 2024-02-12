@@ -1,0 +1,57 @@
+.photos {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  
+  width: 75%;
+  overflow: auto;
+  .your {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f5f9;
+    padding-block: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: white;
+    padding: .8rem;
+  }
+  .aboutYou {
+    display: flex;
+    gap: 1rem;
+    padding-block: 0.5rem;
+    background-color: white;
+    font-size: 1rem;
+    padding: .8rem;
+    .abt {
+      color: #2563eb;
+      border-bottom: 0.2rem solid #2563eb;
+      gap: 1rem;
+    }
+    .abt2 {
+      color: #64748b;
+    }
+    .abt3 {
+      color: #64748b;
+    }
+  }
+  .total {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: .8rem;
+    .totalHeading {
+      display: flex;
+      flex-direction: column;
+      padding-block: 0.5rem;
+      gap: 0.5rem;
+    }
+    .totalPhotos {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      .row1 {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

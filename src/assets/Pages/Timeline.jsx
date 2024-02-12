@@ -115,7 +115,7 @@ const Timeline = () => {
         </div>
 
         <div
-          className="msg"
+          className="msgs"
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -131,7 +131,7 @@ const Timeline = () => {
             placeholder="Write your message"
             style={{ backgroundColor: "transparent", border: "none" }}
           />
-          <div>
+          <div className="msgsItems">
             <img src={smile} alt="" />
             <img src={ink} alt="" />
           </div>

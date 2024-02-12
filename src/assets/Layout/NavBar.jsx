@@ -8,8 +8,15 @@ import Notifications from "../Components/Images/notifications.png";
 import Messages from "../Components/Images/messages.png";
 import search from "../Components/Images/search.png";
 import "./Navbar.scss";
+import { useState } from "react";
+import Notification from "../Pages/Notification";
 
 const NavBar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click);
+  };
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -26,14 +33,19 @@ const NavBar = () => {
         </div>
         <div className="nav-right-body">
           <img src={Messages} alt="noimage" />
-          <Link to="/notification">
-            <img src={Notifications} alt="noimage" />
-          </Link>
+
+          <img src={Notifications} alt="noimage" onClick={handleClick} />
 
           <div className="profile">
             <img src={Avatar} alt="noimage" />
             <img src={Chevrondown} alt="noimage" />
           </div>
+
+          {click && (
+            <div className="toggle">
+              <Notification />
+            </div>
+          )}
         </div>
       </div>
     </div>

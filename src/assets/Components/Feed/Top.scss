@@ -41,12 +41,33 @@
     .posts {
       display: flex;
       align-items: center;
-      gap: 100px;
-    //   padding-inline: 70px;
-      padding: .8rem;
+      gap: 5rem;
+      //   padding-inline: 70px;
+      padding: 0.8rem;
       background-color: #f8fafc;
       border-radius: 5px;
       background-color: white;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img {
+    width: 100%;
+  }
+  .posts {
+    gap: 0.5rem;
+    padding: 0;
+    background-color: rgb(219, 187, 187);
+  }
+  .posts h3 {
+    font-size: 1rem;
+  }
+  .posts p {
+    font-size: 0.8rem;
+  }
+  .avatar {
+    gap: 0.5rem;
+    padding: 0;
   }
 }

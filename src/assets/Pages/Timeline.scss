@@ -104,3 +104,12 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .LeftRight{
+    justify-content: space-between;
+  }
+  .msgsItems{
+    display: flex;
+  }
+}

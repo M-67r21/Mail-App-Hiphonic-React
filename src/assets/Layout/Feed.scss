@@ -1,11 +1,22 @@
-.feed{
-    display: flex;
-    flex-direction: column;
-    background-color: #F8FAFC;
-    padding: 1rem;
+.prof2-feed {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+  padding: 1rem;
+  width: 75%;
+  // height: 100%;
+  overflow: auto;
 
-    .bottom{
-        display: flex;
-        padding-top: 10px;
-    }
+  .prof2-bottom {
+    display: flex;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .prof2-feed {
+    width: 100vw;
+    background-color: #097bf5;
+    display: flex;
+  }
 }

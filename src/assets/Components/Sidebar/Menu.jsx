@@ -25,19 +25,27 @@ const Menu = () => {
       </div>
       <div className="menu-items">
         <img src={groups} alt="" />
-        <span>Group</span>
+        <Link to="/group">
+          <span>Group</span>
+        </Link>
       </div>
       <div className="menu-items">
         <img src={videos} alt="" />
-        <span>Video</span>
+        <Link to="/videos">
+          <span>Videos</span>
+        </Link>
       </div>
       <div className="menu-items">
         <img src={photos} alt="" />
-        <span>Photos</span>
+        <Link to="/photos">
+          <span>Photos</span>
+        </Link>
       </div>
       <div className="menu-items">
         <img src={events} alt="" />
-        <span>Events</span>
+        <Link to="/events">
+          <span>Events</span>
+        </Link>
         <span>14</span>
       </div>
     </div>

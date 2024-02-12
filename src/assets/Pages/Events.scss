@@ -1,0 +1,323 @@
+.event {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 1rem;
+  overflow: auto;
+  border-radius: 1rem;
+  .eventHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 1rem;
+    background-color: white;
+  }
+  .popular {
+    display: flex;
+    flex-direction: column;
+    padding-block: 0.5rem;
+    background-color: white;
+    .popularHeading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      .popularHeadingButton {
+        display: flex;
+        gap: 0.5rem;
+        button {
+          padding: 0.8rem;
+          border: none;
+          background-color: transparent;
+          color: #64748b;
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+      .calender {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        p {
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .images {
+      display: flex;
+      flex-direction: column;
+
+      .imagesTop {
+        display: flex;
+        background-color: white;
+        padding: 1.2rem;
+        gap: 1.2rem;
+        .imagesTopLeft {
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          background-color: #f8fafc;
+          border-radius: 0.8rem;
+          gap: 0.8rem;
+          .national {
+            display: flex;
+            justify-content: space-between;
+            .nationalName {
+              display: flex;
+              flex-direction: column;
+            }
+            button {
+              display: flex;
+              align-items: center;
+              border: none;
+              background-color: white;
+              padding: 0.6rem;
+              border-radius: 0.5rem;
+              color: #0f172a;
+              font-weight: 600;
+              font-size: 0.8rem;
+            }
+          }
+          .going {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .goingImg {
+              display: flex;
+              align-items: center;
+            }
+            p {
+              color: #94a3b8;
+              font-weight: 400;
+              font-size: 0.8rem;
+            }
+          }
+          .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem;
+            background-color: white;
+            border: 0.1rem solid #e2e8f0;
+            border-radius: 1rem;
+            p {
+              color: #64748b;
+              font-size: 0.8rem;
+              font-weight: 500;
+            }
+          }
+          button {
+            color: #2563eb;
+            background-color: white;
+            border: none;
+            padding: 0.8rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 0.5rem;
+          }
+        }
+        .imagesTopRight {
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          background-color: #f8fafc;
+          border-radius: 0.8rem;
+          gap: 0.8rem;
+          .national {
+            display: flex;
+            justify-content: space-between;
+            .nationalName {
+              display: flex;
+              flex-direction: column;
+            }
+            button {
+              display: flex;
+              align-items: center;
+              border: none;
+              background-color: white;
+              padding: 0.6rem;
+              border-radius: 0.5rem;
+              color: #0f172a;
+              font-weight: 600;
+              font-size: 0.8rem;
+            }
+          }
+          .going {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .goingImg {
+              display: flex;
+              align-items: center;
+            }
+            p {
+              color: #94a3b8;
+              font-weight: 400;
+              font-size: 0.8rem;
+            }
+          }
+          .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem;
+            background-color: white;
+            border: 0.1rem solid #e2e8f0;
+            border-radius: 1rem;
+            p {
+              color: #64748b;
+              font-size: 0.8rem;
+              font-weight: 500;
+            }
+          }
+          button {
+            color: #2563eb;
+            background-color: white;
+            border: none;
+            padding: 0.8rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+      .imagesBottom {
+        display: flex;
+        background-color: white;
+        padding: 1.2rem;
+        gap: 1.2rem;
+        .imagesBottomLeft {
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          background-color: #f8fafc;
+          border-radius: 0.8rem;
+          gap: 0.8rem;
+          .national {
+            display: flex;
+            justify-content: space-between;
+            .nationalName {
+              display: flex;
+              flex-direction: column;
+            }
+            button {
+              display: flex;
+              align-items: center;
+              border: none;
+              background-color: white;
+              padding: 0.6rem;
+              border-radius: 0.5rem;
+              color: #0f172a;
+              font-weight: 600;
+              font-size: 0.8rem;
+            }
+          }
+          .going {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .goingImg {
+              display: flex;
+              align-items: center;
+            }
+            p {
+              color: #94a3b8;
+              font-weight: 400;
+              font-size: 0.8rem;
+            }
+          }
+          .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem;
+            background-color: white;
+            border: 0.1rem solid #e2e8f0;
+            border-radius: 1rem;
+            p {
+              color: #64748b;
+              font-size: 0.8rem;
+              font-weight: 500;
+            }
+          }
+          button {
+            color: #2563eb;
+            background-color: white;
+            border: none;
+            padding: 0.8rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 0.5rem;
+          }
+        }
+        .imagesBottomRight {
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          background-color: #f8fafc;
+          border-radius: 0.8rem;
+          gap: 0.8rem;
+          .national {
+            display: flex;
+            justify-content: space-between;
+            .nationalName {
+              display: flex;
+              flex-direction: column;
+            }
+            button {
+              display: flex;
+              align-items: center;
+              border: none;
+              background-color: white;
+              padding: 0.6rem;
+              border-radius: 0.5rem;
+              color: #0f172a;
+              font-weight: 600;
+              font-size: 0.8rem;
+            }
+          }
+          .going {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .goingImg {
+              display: flex;
+              align-items: center;
+            }
+            p {
+              color: #94a3b8;
+              font-weight: 400;
+              font-size: 0.8rem;
+            }
+          }
+          .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem;
+            background-color: white;
+            border: 0.1rem solid #e2e8f0;
+            border-radius: 1rem;
+            p {
+              color: #64748b;
+              font-size: 0.8rem;
+              font-weight: 500;
+            }
+          }
+          button {
+            color: #2563eb;
+            background-color: white;
+            border: none;
+            padding: 0.8rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
