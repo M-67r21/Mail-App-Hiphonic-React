@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+// import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Register() {
   const schema = yup.object().shape({
@@ -34,13 +36,20 @@ function Register() {
 
   const submitFunction = (data) => {
     console.log(data);
+    // useNavigate("./Login.jsx");
   };
 
   return (
     <>
       <form
         onSubmit={handleSubmit(submitFunction)}
-        style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "2rem",
+          paddingBlock: "4rem",
+          paddingInline: "34rem",
+        }}
       >
         <>
           <input
@@ -82,7 +91,9 @@ function Register() {
           />
           <p>{errors.confirmPassword?.message}</p>
         </>
-        <input type="submit" value="Submit" />
+        <Link to="/login">
+          <input type="submit" value="Submit" />
+        </Link>
       </form>
     </>
   );

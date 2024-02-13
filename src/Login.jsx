@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
-function App() {
+function Login() {
   const schema = yup.object().shape({
     username: yup
       .string()
@@ -36,7 +37,13 @@ function App() {
     <>
       <form
         onSubmit={handleSubmit(submitFunction)}
-        style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "2rem",
+          paddingBlock: "4rem",
+          paddingInline: "34rem",
+        }}
       >
         <>
           <input
@@ -48,10 +55,10 @@ function App() {
           <p>{errors.username?.message}</p>
         </>
 
-        <>
+        {/* <>
           <input type="text" placeholder="Email..." {...register("email")} />
           <p>{errors.email?.message}</p>
-        </>
+        </> */}
         <>
           <input
             type="password"
@@ -61,7 +68,7 @@ function App() {
           />
           <p>{errors.password?.message}</p>
         </>
-        <>
+        {/* <>
           <input
             type="password"
             name=""
@@ -69,11 +76,13 @@ function App() {
             {...register("confirmPassword", { required: true, minLength: 6 })}
           />
           <p>{errors.confirmPassword?.message}</p>
-        </>
-        <button type="submit" onClick={}>Submit</button> 
+        </> */}
+        <Link to="/feed">
+          <input type="submit" value="Submit" />
+        </Link>
       </form>
     </>
   );
 }
 
-export default App;
+export default Login;
